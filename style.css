@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+/* .container-fluid::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-attachment: fixed;
+    background-color: rgb(25 1 49 / 40%);
+    z-index: -1;
+} */
+body {
+    background: url(/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-fluid {
+    background-color: rgb(25 1 49 / 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(242 203 227);
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+.container {
+    background-color: rgb(25 1 49 / 30%);
+    color: rgb(242 203 227);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card {
+    width: 250px;
+    background-color: rgb(25 1 49 / 80%);
+    text-transform: capitalize;
+}
+.card-img-top {
+    background-color: rgb(25 1 49 / 1);
+}
+button[type=submit], button[type=submit]:hover{
+    background-color:  rgb(242 203 227);
+    color: rgb(25 1 49 / 1);
+    border: none;
+}
