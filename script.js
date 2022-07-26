@@ -20,7 +20,7 @@ document.getElementById("checkbtn").addEventListener("click", (e) => {
             console.log(generation);
             // console.log(gen)
     
-            if (pokemonLower == "") {
+            if (pokemonLower === "") {
                 alert("Type pokemon names");
             }
             else {
@@ -35,10 +35,10 @@ document.getElementById("checkbtn").addEventListener("click", (e) => {
                 }
                 
                 display.innerHTML += `
-                <div class="card">
+                <div class="card shadow">
                     <img src="${final.sprites.other['official-artwork'].front_default}" class="card-img-top p-3" alt="${final.name}">
                     <div class="card-body p-3">
-                        <h5 class="card-title text-center">${final.name}</h5>
+                        <h5 class="card-title text-center">${final.id}. ${final.name}</h5>
                         <h6 class="card-title">Abilities</h6>
                         <p class="card-text mb-1" id="abilities">${abilities}</p>
                         <h6 class="card-title">Type</h6>
